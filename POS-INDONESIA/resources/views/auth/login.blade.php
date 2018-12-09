@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>InfyOm Laravel Generator</title>
+    <title>POS Indonesia</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -32,16 +32,20 @@
     <![endif]-->
 
 </head>
-<body class="hold-transition login-page">
-<div class="login-box">
+<body class="hold-transition login-page" style="background: #ff9900;
+background: -moz-linear-gradient( center top, #ffffff 10%, #fadead 100% );
+background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #ffffff), color-stop(1, #fadead) );">
+<div class="login-box" >
     <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>InfyOm </b>Generator</a>
+        <a href="{{ url('/home') }}" ></a>
+    </div>
+    <div>
+        <img src="../image/pos.png" height="200" width="300" style="margin-left: 35px;" />
     </div>
 
     <!-- /.login-logo -->
-    <div class="login-box-body">
-        <p class="login-box-msg">Sign in to start your session</p>
-
+    <div class="login-box-body" style="background-color: transparent;">
+        <p class="login-box-msg"><b>Enter Your Email and Passsword</b></p>
         <form method="post" action="{{ url('/login') }}">
             {!! csrf_field() !!}
 
@@ -67,22 +71,22 @@
             </div>
             <div class="row">
                 <div class="col-xs-8">
-                    <div class="checkbox icheck">
+                    <div class="checkbox icheck" >
                         <label>
-                            <input type="checkbox" name="remember"> Remember Me
+                            <input type="checkbox" name="remember" style="background-color: orangered;"> Remember Me
                         </label>
                     </div>
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius: 80px; color: orangered; background-color: transparent; border-color: orangered">Sign In</button>
                 </div>
                 <!-- /.col -->
             </div>
         </form>
 
-        <a href="{{ url('/password/reset') }}">I forgot my password</a><br>
-        <a href="{{ url('/register') }}" class="text-center">Register a new membership</a>
+        <a href="{{ url('/password/reset') }}" style="color: orangered">Forgot password ?</a><br>
+        <a href="{{ url('/register') }}" class="text-center" style="color: orangered">Register</a>
 
     </div>
     <!-- /.login-box-body -->
@@ -96,14 +100,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
-<script>
+<script >
     $(function () {
         $('input').iCheck({
-            checkboxClass: 'icheckbox_square-blue',
+            checkboxClass: 'icheckbox_square-red',
             radioClass: 'iradio_square-blue',
             increaseArea: '20%' // optional
         });
     });
 </script>
 </body>
+
+
 </html>

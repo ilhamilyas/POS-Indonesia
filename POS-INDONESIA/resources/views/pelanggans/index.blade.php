@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
     <section class="content-header">
         <h1 class="pull-left">Pelanggans</h1>
         <h1 class="pull-right">
-           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('pelanggans.create') !!}">Add New</a>
+           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px;background-color: #222d31;" href="{!! route('pelanggans.create') !!}">Tambah Pelanggan</a>
         </h1>
     </section>
     <div class="content">

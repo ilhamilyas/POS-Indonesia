@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>InfyOm Laravel Generator</title>
+    <title>POS Indonesia | Password Reset</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -32,15 +32,20 @@
     <![endif]-->
 
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background: #ff9900;
+background: -moz-linear-gradient( center top, #ffffff 10%, #fadead 100% );
+background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #ffffff), color-stop(1, #fadead) );">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>InfyOm </b>Generator</a>
+        <a href="{{ url('/home') }}"></a>
+    </div>
+    <div>
+        <img src="../image/pos.png" height="200" width="300" style="margin-left: 35px; margin-top: -60px" />
     </div>
 
     <!-- /.login-logo -->
-    <div class="login-box-body">
-        <p class="login-box-msg">Enter Email to reset password</p>
+    <div class="login-box-body" style="background-color: transparent">
+        <p class="login-box-msg"><b>Enter Email to reset password</b></p>
 
         @if (session('status'))
             <div class="alert alert-success">
@@ -63,8 +68,8 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary pull-right">
-                        <i class="fa fa-btn fa-envelope"></i> Send Password Reset Link
+                    <button type="submit" class="btn btn-primary pull-right" style="border-radius: 80px; color: orangered; background-color: transparent; border-color: orangered">
+                        <i class="fa fa-btn fa-envelope" ></i> Send Password Reset Link
                     </button>
                 </div>
             </div>

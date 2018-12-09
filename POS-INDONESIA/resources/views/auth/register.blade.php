@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>InfyOm Laravel Generator | Registration Page</title>
+    <title>POS Indoneisa | Registration</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -31,14 +31,19 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition register-page">
+<body class="hold-transition register-page" style="background: #ff9900;
+background: -moz-linear-gradient( center top, #ffffff 10%, #fadead 100% );
+background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #ffffff), color-stop(1, #fadead) );">
 <div class="register-box">
     <div class="register-logo">
-        <a href="{{ url('/home') }}"><b>InfyOm </b>Generator</a>
+        <a href="{{ url('/home') }}"></a>
+    </div>
+    <div>
+    <img src="../image/pos.png" height="200" width="300" style="margin-left: 35px; margin-top: -60px" />
     </div>
 
-    <div class="register-box-body">
-        <p class="login-box-msg">Register a new membership</p>
+    <div class="register-box-body" style="background-color: transparent;">
+        <p class="login-box-msg" ><b>Register</b></p>
 
         <form method="post" action="{{ url('/register') }}">
 
@@ -92,19 +97,19 @@
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
                         <label>
-                            <input type="checkbox"> I agree to the <a href="#">terms</a>
+                            <input type="checkbox"> I agree to the <a href="#" style="color: orangered">terms</a>
                         </label>
                     </div>
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+                    <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius: 80px; color: orangered; background-color: transparent; border-color: orangered">Register</button>
                 </div>
                 <!-- /.col -->
             </div>
         </form>
 
-        <a href="{{ url('/login') }}" class="text-center">I already have a membership</a>
+        <a href="{{ url('/login') }}" class="text-center" style="color: orangered">I already have a membership</a>
     </div>
     <!-- /.form-box -->
 </div>
