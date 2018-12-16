@@ -12,7 +12,13 @@ import { WebBrowser } from 'expo';
 import { Icon, Card, Button } from 'react-native-elements';
 import { MonoText } from '../components/StyledText';
 
+
+import DataScreen from '../screens/DataScreen';
+import {createStackNavigator} from "react-navigation";
+
 export default class HomeScreen extends React.Component {
+
+
   static navigationOptions = {
       title: 'Pilih Paket',
       headerStyle: {
@@ -23,16 +29,14 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
         <ScrollView style={{ flex: 1, backgroundColor: '#fadfb0' }} >
-        <Card title="paket biasa">
+        <Card title="Paket Biasa">
       <Image
       style={styles.image}
       resizeMode="contain"
       justifyContent='center'
       source={require('../assets/images/pos.png')}
       />
-      <Button onPress={() => {Alert.alert(
-          'RH Optimal : 80 - 90%',
-      );}} title="Pilih" borderRadius={10} backgroundColor='#eb5f27' icon={{name: 'details'}} fontWeight={'bold'}/>
+      <Button onPress={() => this.props.navigation.navigate('Data')} title="Pilih" borderRadius={10} backgroundColor='#eb5f27' icon={{name: 'details'}} fontWeight={'bold'}/>
 
       </Card>
 
@@ -43,9 +47,7 @@ export default class HomeScreen extends React.Component {
       justifyContent='center'
       source={require('../assets/images/pos.png')}
       />
-      <Button onPress={() => {Alert.alert(
-          'RH Optimal : 80 - 90%',
-      );}} title="Pilih" borderRadius={10} backgroundColor='#eb5f27' icon={{name: 'details'}} fontWeight={'bold'}/>
+      <Button onPress={() => this.props.navigation.navigate('Data')} title="Pilih" borderRadius={10} backgroundColor='#eb5f27' icon={{name: 'details'}} fontWeight={'bold'}/>
 
       </Card>
 
@@ -56,9 +58,7 @@ export default class HomeScreen extends React.Component {
       justifyContent='center'
       source={require('../assets/images/pos.png')}
       />
-      <Button onPress={() => {Alert.alert(
-          'RH Optimal : 80 - 90%',
-      );}} title="Pilih" borderRadius={10} backgroundColor='#eb5f27' icon={{name: 'details'}} fontWeight={'bold'}/>
+      <Button onPress={() => this.props.navigation.navigate('Data')} title="Pilih" borderRadius={10} backgroundColor='#eb5f27' icon={{name: 'details'}} fontWeight={'bold'}/>
 
       </Card>
       </ScrollView>
