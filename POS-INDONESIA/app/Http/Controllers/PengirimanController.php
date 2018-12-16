@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreatePengirimanRequest;
 use App\Http\Requests\UpdatePengirimanRequest;
+use App\Models\Barang;
+use App\Models\Jenisbarang;
+use App\Models\Kantorcabang;
+use App\Models\Paket;
+use App\Models\Pelanggan;
 use App\Repositories\PengirimanRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
@@ -29,6 +34,7 @@ class PengirimanController extends AppBaseController
      */
     public function index(Request $request)
     {
+
         $this->pengirimanRepository->pushCriteria(new RequestCriteria($request));
         $pengirimen = $this->pengirimanRepository->all();
 
@@ -43,7 +49,12 @@ class PengirimanController extends AppBaseController
      */
     public function create()
     {
-        return view('pengirimen.create');
+        $barangs = Barang::pluck('id');
+        $pelanggans = Pelanggan::pluck('id');
+        $jenisbarangs = Jenisbarang::pluck('id');
+        $pakets = Paket::pluck('id');
+        $kantorcabangs = Kantorcabang::pluck('id');
+        return view('pengirimen.create',compact('pengirimen','barangs', 'pelanggans','pakets','jenisbarangs','kantorcabangs'));
     }
 
     /**

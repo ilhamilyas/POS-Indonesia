@@ -13,31 +13,31 @@
 <!-- Pelanggan Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('pelanggan_id', 'Pelanggan Id:') !!}
-    {!! Form::number('pelanggan_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('pelanggan_id',$pelanggans, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Barang Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('barang_id', 'Barang Id:') !!}
-    {!! Form::number('barang_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('barang_id',$barangs, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Jenisbarang Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('jenisbarang_id', 'Jenisbarang Id:') !!}
-    {!! Form::number('jenisbarang_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('jenisbarang_id',$jenisbarangs, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Paket Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('paket_id', 'Paket Id:') !!}
-    {!! Form::number('paket_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('paket_id',$pakets, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Kantorcabang Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('kantorcabang_id', 'Kantorcabang Id:') !!}
-    {!! Form::number('kantorcabang_id', null, ['class' => 'form-control']) !!}
+    {!! Form::select('kantorcabang_id',$kantorcabangs, null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Submit Field -->

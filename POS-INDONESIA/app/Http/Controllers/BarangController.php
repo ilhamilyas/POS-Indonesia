@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateBarangRequest;
 use App\Http\Requests\UpdateBarangRequest;
+use App\Models\Barang;
 use App\Repositories\BarangRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
@@ -29,6 +30,7 @@ class BarangController extends AppBaseController
      */
     public function index(Request $request)
     {
+
         $this->barangRepository->pushCriteria(new RequestCriteria($request));
         $barangs = $this->barangRepository->all();
 

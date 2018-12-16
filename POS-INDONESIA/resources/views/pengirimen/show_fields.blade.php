@@ -36,31 +36,31 @@
 
 <!-- Pelanggan Id Field -->
 <div class="form-group">
-    {!! Form::label('pelanggan_id', 'Pelanggan Id:') !!}
-    <p>{!! $pengiriman->pelanggan_id !!}</p>
+    {!! Form::label('pelanggan_id', 'Nama Pelanggan:') !!}
+    <p>{!! $pengiriman->pelanggan->nama !!}</p>
 </div>
 
 <!-- Barang Id Field -->
 <div class="form-group">
-    {!! Form::label('barang_id', 'Barang Id:') !!}
-    <p>{!! $pengiriman->barang_id !!}</p>
+    {!! Form::label('barang_id', 'Barang:') !!}
+    <p>{!! $pengiriman->barang->nama !!}</p>
 </div>
 
 <!-- Jenisbarang Id Field -->
 <div class="form-group">
     {!! Form::label('jenisbarang_id', 'Jenisbarang Id:') !!}
-    <p>{!! $pengiriman->jenisbarang_id !!}</p>
+    <p>{!! $pengiriman->jenisbarang->jenisbarang !!}</p>
 </div>
 
 <!-- Paket Id Field -->
 <div class="form-group">
-    {!! Form::label('paket_id', 'Paket Id:') !!}
-    <p>{!! $pengiriman->paket_id !!}</p>
+    {!! Form::label('paket_id', 'Jenis Barang:') !!}
+    <p>{!! $pengiriman->paket->jenispaket !!}</p>
 </div>
 
 <!-- Kantorcabang Id Field -->
 <div class="form-group">
-    {!! Form::label('kantorcabang_id', 'Kantorcabang Id:') !!}
-    <p>{!! $pengiriman->kantorcabang_id !!}</p>
+    {!! Form::label('kantorcabang_id', 'Kode Pos:') !!}
+    <p>{!! $pengiriman->kantorcabang->namakantorcabang !!}</p>
 </div>
 
