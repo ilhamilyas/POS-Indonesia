@@ -86,7 +86,7 @@ export default class ProfileScreen extends Component {
                 <View style={styles.imageAvatar}>
                     <Image
                         style={{height:hp('24%'), width:wp('42%'), marginTop:hp('-15%'), marginLeft:wp('-13%'), borderRadius: 120, borderColor:'white', borderWidth: 2.5}}
-                        source={require('../assets/images/robot-dev.png')
+                        source={require('../assets/images/fb.jpg')
                         }
                     />
 
@@ -112,7 +112,7 @@ export default class ProfileScreen extends Component {
                             </View>
 
                             <View style={styles.viewItemInput}>
-                                <Text style={styles.textTitleInput}>Program Studi</Text>
+                                <Text style={styles.textTitleInput}>Tempat Tanggal Lahir</Text>
                                 <TextInput
                                     ref="countryInput"
                                     style={styles.textInput}
@@ -128,7 +128,7 @@ export default class ProfileScreen extends Component {
                             </View>
 
                             <View style={styles.viewItemInput}>
-                                <Text style={styles.textTitleInput}>Tahun Lulus</Text>
+                                <Text style={styles.textTitleInput}>Alamat</Text>
                                 <TextInput
                                     ref="addressInput"
                                     style={styles.textInput}
@@ -144,7 +144,7 @@ export default class ProfileScreen extends Component {
                             </View>
 
                             <View style={styles.viewItemInput}>
-                                <Text style={styles.textTitleInput}>Status</Text>
+                                <Text style={styles.textTitleInput}>No. HP</Text>
                                 <TextInput
                                     ref="aboutMeInput"
                                     style={styles.textInput}
@@ -157,7 +157,7 @@ export default class ProfileScreen extends Component {
                             </View>
 
                             <View style={styles.viewItemInput}>
-                                <Text style={styles.textTitleInput}>Pekerjaan</Text>
+                                <Text style={styles.textTitleInput}>Email</Text>
                                 <TextInput
                                     ref="aboutMeInput"
                                     style={styles.textInput}
